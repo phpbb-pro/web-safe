@@ -1,0 +1,17 @@
+.faq {
+  padding: 3rem 0 1rem;
+  margin: 0 auto;
+  max-width: 40rem;
+  font-family: $font-lucida;
+
+  dt {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  dd {
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+}

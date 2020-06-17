@@ -1,0 +1,24 @@
+.cta {
+  background-color: #cadceb;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.cta__title {
+  font-size: 1.5rem;
+  font-family: $font-trebuchet;
+  line-height: 1.5;
+  margin: 0 0 1.25rem;
+}
+
+.cta__secondary {
+  color: #105289;
+  text-decoration: none;
+
+  &:hover {
+    color: #d31141;
+    text-decoration: underline;
+  }
+}

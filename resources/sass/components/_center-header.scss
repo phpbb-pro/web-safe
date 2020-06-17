@@ -1,0 +1,16 @@
+.center-header__header {
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: $font-trebuchet;
+  margin: 0;
+  padding-top: 5rem;
+}
+.center-header__text {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+  font-family: $font-lucida;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}

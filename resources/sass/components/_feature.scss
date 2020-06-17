@@ -1,0 +1,42 @@
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+.feature--right {
+  flex-direction: row-reverse;
+}
+.feature--grey {
+  background-color: #f1f1f1;
+}
+.feature--light-blue {
+  background-color: #e9eff1;
+}
+
+.feature__img-container {
+  flex: 6;
+}
+.feature__img {
+  max-width: 100%;
+}
+
+.feature__copy {
+  flex: 5;
+  margin-left: 10%;
+
+  .feature--right & {
+    margin-left: 0;
+    margin-right: 10%;
+  }
+}
+.feature__header {
+  margin: 0;
+  font-family: $font-trebuchet;
+  font-weight: normal;
+  font-size: 1.75rem;
+}
+.feature__text {
+  font-family: $font-lucida;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5rem;
+}

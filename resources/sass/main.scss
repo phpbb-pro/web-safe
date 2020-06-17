@@ -1,0 +1,62 @@
+@import "variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0.75rem 0;
+  background-color: #f5f7fa;
+  font-family: $font-verdana;
+}
+
+.wrap {
+  position: relative;
+  background-color: #fff;
+  border: 0.0625rem solid #e6e9ed;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 74rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+.nav {
+  background-color: #cadceb;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+}
+
+.with-bottom-padding {
+  padding-bottom: 5rem;
+}
+
+.visually-hidden { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); // IE6, IE7
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+@import "components/center-header";
+@import "components/cta";
+@import "components/faq";
+@import "components/footer";
+@import "components/feature";
+@import "components/hero";
+@import "components/menu";
+@import "components/pricing";
+@import "components/use-case";
+@import "components/use-cases";

@@ -1,0 +1,36 @@
+.use-case__backlink {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: #105289;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+
+  &::before {
+    content: '< ';
+  }
+}
+
+.use-case {
+  margin: 0 auto 5rem;
+  padding: 0 1rem;
+  max-width: 40rem;
+}
+
+.use-case__how-title {
+  margin: 5rem 0 2rem;
+  font-family: $font-trebuchet;
+  font-weight: normal;
+  font-size: 1.75rem;
+}
+
+.use-case__how-list {
+  line-height: 1.5rem;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+}
