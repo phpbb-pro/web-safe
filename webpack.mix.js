@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const glob = require('glob');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,12 +12,20 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/lazyload.js', 'public/js')
-    .js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/main.scss', 'public/css')
+// forms
+mix.js('resources/js/forms/lazyload.js', 'public/js/forms')
+    .js('resources/js/forms/app.js', 'public/js/forms')
+    .sass('resources/sass/forms/forms.scss', 'public/css')
+
+// httpproxy
+mix.js('resources/js/httpproxy/autotrack.js', 'public/js/httpproxy')
+    .sass('resources/sass/httpproxy/httpproxy.scss', 'public/css')
+
+// general
+mix.copyDirectory('resources/images', 'public/images')
     .sourceMaps()
     .browserSync('localhost:8000');
 
 if (mix.inProduction()) {
-    mix.version();
+    mix.version(glob.sync('**/*', {cwd: 'resources/images'}).map(f => 'public/images/' + f));
 }

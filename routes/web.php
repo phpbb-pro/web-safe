@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function() {
+    return view('index');
+});
 
-foreach (glob('../resources/views/*/pages/*.blade.php') as $file) {
+foreach (glob('../resources/views/httpproxy/pages/*.blade.php') as $file) {
     $pathinfo = pathinfo($file);
     $ext = str_replace(['../resources/views/', '/pages'], '', $pathinfo['dirname']);
     $path = substr($pathinfo['filename'], 0, -6);
@@ -27,4 +30,4 @@ foreach (glob('../resources/views/*/pages/*.blade.php') as $file) {
     })->name("$ext/$route");
 }
 
-Route::get('/pay/{ext}/{package}', 'PaymentController@payWithpaypal')->name('pay');
+// Route::get('/pay/{ext}/{package}', 'PaymentController@payWithpaypal')->name('pay');
