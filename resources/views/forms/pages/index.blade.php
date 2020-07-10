@@ -1,4 +1,4 @@
-@extends('forms.layout')
+@extends('_layouts.silverlike')
 
 @section('title', 'phpBB Forms Extension')
 
@@ -8,9 +8,9 @@
       <div class="hero__img-container">
         <img
           class="hero__img"
-          src="/img/phpbb-forms-extension.jpg"
-          srcset="/img/phpbb-forms-extension.jpg,
-                  /img/phpbb-forms-extension@2x.jpg 2x"
+          src="{{ mix('/images/forms/phpbb-forms-extension.jpg') }}"
+          srcset="{{ mix('/images/forms/phpbb-forms-extension.jpg') }},
+                  {{ mix('/images/forms/phpbb-forms-extension@2x.jpg') }} 2x"
           width="644"
           height="361"
           alt="Forms phpBB premium extension allows you to generate structured forms instead of default text method to create topics.">
@@ -28,8 +28,8 @@
       <article class="feature feature--right">
         <div class="feature__img-container">
           <video class="feature__img lozad" autoplay loop muted playsinline>
-            <source data-src="/img/phpbb-forms-review-report-request-application.webm" type="video/webm">
-            <source data-src="/img/phpbb-forms-review-report-request-application.mp4" type="video/mp4">
+            <source data-src="{{ mix('/images/forms/phpbb-forms-review-report-request-application.webm') }}" type="video/webm">
+            <source data-src="{{ mix('/images/forms/phpbb-forms-review-report-request-application.mp4') }}" type="video/mp4">
           </video>
         </div>
         <div class="feature__copy">
@@ -42,9 +42,9 @@
         <div class="feature__img-container">
           <img
             class="feature__img lozad"
-            data-src="/img/phpbb-forms-drag-drop-editor.jpg"
-            data-srcset="/img/phpbb-forms-drag-drop-editor.jpg,
-                    /img/phpbb-forms-drag-drop-editor@2x.jpg 2x"
+            data-src="{{ mix('/images/forms/phpbb-forms-drag-drop-editor.jpg') }}"
+            data-srcset="{{ mix('/images/forms/phpbb-forms-drag-drop-editor.jpg') }},
+                    {{ mix('/images/forms/phpbb-forms-drag-drop-editor@2x.jpg') }} 2x"
             width="489"
             height="206"
             alt=".">
@@ -59,9 +59,9 @@
         <div class="feature__img-container">
           <img
             class="feature__img lozad"
-            data-src="/img/phpbb-forms-replace-or-link.jpg"
-            data-srcset="/img/phpbb-forms-replace-or-link.jpg,
-                    /img/phpbb-forms-replace-or-link@2x.jpg 2x"
+            data-src="{{ mix('/images/forms/phpbb-forms-replace-or-link.jpg') }}"
+            data-srcset="{{ mix('/images/forms/phpbb-forms-replace-or-link.jpg') }},
+                    {{ mix('/images/forms/phpbb-forms-replace-or-link@2x.jpg') }} 2x"
             width="503"
             height="284"
             alt=".">
@@ -76,9 +76,9 @@
         <div class="feature__img-container">
           <img
             class="feature__img lozad"
-            data-src="/img/phpbb-forms-wide-variety-of-inputs.jpg"
-            data-srcset="/img/phpbb-forms-wide-variety-of-inputs.jpg,
-                    /img/phpbb-forms-wide-variety-of-inputs@2x.jpg 2x"
+            data-src="{{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs.jpg') }}"
+            data-srcset="{{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs.jpg') }},
+                    {{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs@2x.jpg') }} 2x"
             width="503"
             height="304"
             alt=".">
@@ -92,8 +92,8 @@
       <article class="feature feature--right">
         <div class="feature__img-container">
           <video class="feature__img lozad" autoplay loop muted playsinline>
-            <source data-src="/img/phpbb-forms-edit.webm" type="video/webm">
-            <source data-src="/img/phpbb-forms-edit.mp4" type="video/mp4">
+            <source data-src="{{ mix('/images/forms/phpbb-forms-edit.webm') }}" type="video/webm">
+            <source data-src="{{ mix('/images/forms/phpbb-forms-edit.mp4') }}" type="video/mp4">
           </video>
         </div>
         <div class="feature__copy">

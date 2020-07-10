@@ -13,13 +13,13 @@ const glob = require('glob');
  */
 
 // forms
-mix.js('resources/js/forms/lazyload.js', 'public/js/forms')
-    .js('resources/js/forms/app.js', 'public/js/forms')
-    .sass('resources/sass/forms/forms.scss', 'public/css')
+mix.js('resources/js/silverlike/lazyload.js', 'public/js/silverlike')
+    .js('resources/js/silverlike/app.js', 'public/js/silverlike')
+    .sass('resources/sass/silverlike/silverlike.scss', 'public/css')
 
 // httpproxy
-mix.js('resources/js/httpproxy/autotrack.js', 'public/js/httpproxy')
-    .sass('resources/sass/httpproxy/httpproxy.scss', 'public/css')
+mix.js('resources/js/seo/autotrack.js', 'public/js/seo')
+    .sass('resources/sass/seo/seo.scss', 'public/css')
 
 // general
 mix.copyDirectory('resources/images', 'public/images')

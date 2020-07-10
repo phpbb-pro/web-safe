@@ -1,4 +1,4 @@
-@extends('httpproxy.layout')
+@extends('_layouts.seo')
 
 @section('content')
   <section id="success">

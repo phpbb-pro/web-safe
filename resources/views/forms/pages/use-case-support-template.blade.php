@@ -1,4 +1,4 @@
-@extends('forms.layout')
+@extends('_layouts.silverlike')
 
 @section('title', 'Support template use case | phpBB Forms Extension')
 

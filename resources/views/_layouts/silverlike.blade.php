@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{{ mix('css/forms.css') }}" rel="stylesheet">
-    <script src="{{ mix('js/forms/lazyload.js') }}" async></script>
+    <link href="{{ mix('css/silverlike.css') }}" rel="stylesheet">
+    <script src="{{ mix('js/silverlike/lazyload.js') }}" async></script>
   </head>
   <body>
     <div class="wrap">
@@ -47,6 +47,6 @@
       </footer>
     </div>
 
-    <script src="{{ mix('js/forms/app.js') }}" defer></script>
+    <script src="{{ mix('js/silverlike/app.js') }}" defer></script>
   </body>
 </html>

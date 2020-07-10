@@ -16,14 +16,14 @@
       ga('send', 'pageview');
     </script>
     <script async src="https://www.google-analytics.com/analytics.js"></script>
-    <script async src="{{ mix('js/httpproxy/autotrack.js') }}"></script>
+    <script async src="{{ mix('js/seo/autotrack.js') }}"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="https://phpbb.pro/httpproxy/">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ mix('css/httpproxy.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ mix('css/seo.css') }}" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
 
