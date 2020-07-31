@@ -9,16 +9,16 @@
 
     <section class="pricing">
       <article class="pricing__item">
-        <h2 class="pricing__name">Standard</h2>
-        <data class="pricing__price">{{ price('forms', 'standard') }}</data>
-        <div class="pricing__button"><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'standard']) }}">Buy now</a></div>
+        <h2 class="pricing__name">Basic</h2>
+        <data class="pricing__price">{{ price('forms', 'basic') }}</data>
+        <div class="pricing__button"><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></div>
         <p class="pricing__desc">Unlimited number of forms, visual editor and edit capability.</p>
       </article>
       <article class="pricing__item pricing__item--popular">
         <h2 class="pricing__name">Extended</h2>
         <data class="pricing__price">{{ price('forms', 'extended') }}</data>
         <div class="pricing__button"><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></div>
-        <p class="pricing__desc">All Standard plus extended input types and custom links.</p>
+        <p class="pricing__desc">All Basic plus more input types, custom links and permissions.</p>
       </article>
       <article class="pricing__item">
         <h2 class="pricing__name">Reseller</h2>
@@ -34,7 +34,7 @@
         <thead>
           <tr>
             <th>Feature</th>
-            <th>Standard</th>
+            <th>Basic</th>
             <th>Extended</th>
             <th>Reseller</th>
           </tr>
@@ -53,7 +53,7 @@
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Input types <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date, time, selectbox,<br>radio, textarea, plain HTML.</span></i></td>
+            <td>Input types <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date, time, selectbox, checkbox, <br>radio, textarea, plain HTML, CAPTCHA.</span></i></td>
             <td>Basic <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date,<br>time, selectbox, textarea.</span></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
@@ -77,19 +77,25 @@
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
+            <td>Permissions <i class="fa fa-question-circle-o pricing__tooltip"><span>Manage what board groups can submit the form. <br>Even guest group can be selected!</span></i></td>
+            <td></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
             <td>3 updates for free <i class="fa fa-question-circle-o pricing__tooltip"><span>Receive next three major<br>updates completely free.</span></i></td>
             <td></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Setup support <i class="fa fa-question-circle-o pricing__tooltip"><span>Get professional advice on how to install, setup and successfully use the extension.</span></i></td>
+            <td>Setup support <i class="fa fa-question-circle-o pricing__tooltip"><span>Get professional advice on how to install, <br>setup and successfully use the extension.</span></i></td>
             <td></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Resell <i class="fa fa-question-circle-o pricing__tooltip"><span>Charge your clients for installation and/or using of this extension.</span></i></td>
+            <td>Resell <i class="fa fa-question-circle-o pricing__tooltip"><span>Charge your clients for installation <br>and/or using of this extension.</span></i></td>
             <td></td>
             <td></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
@@ -102,7 +108,7 @@
           </tr>
           <tr>
             <td></td>
-            <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'standard']) }}">Buy now</a></td>
+            <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></td>
             <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></td>
             <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></td>
           </tr>

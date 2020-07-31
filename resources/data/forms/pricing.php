@@ -1,7 +1,7 @@
 <?php
 
 return [
-  'standard'  => [
+  'basic'  => [
     'EUR' => '19.99',
     'USD' => '19.99',
     'GBP' => '19.99',

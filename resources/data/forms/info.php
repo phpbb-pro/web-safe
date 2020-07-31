@@ -3,7 +3,7 @@
 return [
   'name'  => 'phpBB | Forms',
   'packages' => [
-    'standard'  => 'Standard license',
+    'basic'     => 'Basic license',
     'extended'  => 'Extended license',
     'reseller'  => 'Reseller license',
   ]

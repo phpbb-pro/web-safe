@@ -9,6 +9,13 @@
 
     <div class="use-cases">
       <article class="use-cases__case">
+        <i class="fa fa-database" aria-hidden="true"></i>
+        <h3>Collect data</h3>
+        <p>Manage event registration, conduct a survey or entertain with a test.</p>
+        <p><a href="{{ route('forms/use-case-collect-data') }}">Read more</a></p>
+      </article>
+
+      <article class="use-cases__case">
         <i class="fa fa-life-ring" aria-hidden="true"></i>
         <h3>Support template</h3>
         <p>Gather all the information at once. No follow-up questions needed anymore!</p>
@@ -55,13 +62,6 @@
         <h3>Advertisement</h3>
         <p>Make sure your advertisers input every important detail of the offer.</p>
         <p><a href="{{ route('forms/use-case-advertisement') }}">Read more</a></p>
-      </article>
-
-      <article class="use-cases__case">
-        <i class="fa fa-cutlery" aria-hidden="true"></i>
-        <h3>Recipe</h3>
-        <p>Design a beautiful structured format of recipe of your ingenious chefs for them.</p>
-        <p><a href="{{ route('forms/use-case-recipe') }}">Read more</a></p>
       </article>
 
       <article class="use-cases__case">

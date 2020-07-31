@@ -1,6 +1,6 @@
 @extends('_layouts.silverlike')
 
-@section('title', 'Demo | phpBB Forms Extension')
+@section('title', 'Success | phpBB Forms Extension')
 
 @section('content')
   <main class="with-bottom-padding">

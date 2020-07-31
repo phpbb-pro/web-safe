@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 
-class PaymentController extends Controller
+class PaymentSetupController extends Controller
 {
     private $client;
 
@@ -32,7 +32,7 @@ class PaymentController extends Controller
         $info = require resource_path("data/$ext/info.php");
         $name = $info['name'] . ' - ' . $info['packages'][$package];
 
-        $request->body = $this->buildRequestBody($currency, $price, $name);
+        $request->body = $this->buildRequestBody($ext, $currency, $price, $name);
 
         $response = $this->client->execute($request);
         return redirect($response->result->links[1]->href);
@@ -42,13 +42,13 @@ class PaymentController extends Controller
         return $env == 'sandbox' ? '\PayPalCheckoutSdk\Core\SandboxEnvironment' : 'PayPalCheckoutSdk\Core\ProductionEnvironment';
     }
 
-    protected function buildRequestBody($currency, $price, $name) {
+    protected function buildRequestBody($ext, $currency, $price, $name) {
         return [
             'intent' => 'CAPTURE',
             'application_context' => [
                 'brand_name'    => 'phpbb.pro',
-                'return_url'    => 'https://example.com/return',
-                'cancel_url'    => 'https://example.com/cancel',
+                'return_url'    => "http://localhost:3000/$ext/success",
+                'cancel_url'    => "http://localhost:3000/$ext/cancel",
                 'user_action' => 'PAY_NOW',
                 'landing_page' => 'BILLING',
                 'shipping_preference'   => 'NO_SHIPPING',
