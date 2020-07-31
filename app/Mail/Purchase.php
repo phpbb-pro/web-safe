@@ -32,9 +32,10 @@ class Purchase extends Mailable
      */
     public function build()
     {
-        return $this->text('forms.emails.purchase', [
-            'name'  => $this->name,
-            'link'  => url('storage/' . $this->zip_name),
-        ]);
+        return $this->text('forms.emails.purchase')
+                    ->with([
+                        'name'  => $this->name,
+                        'link'  => url('storage/' . $this->zip_name),
+                    ]);
     }
 }

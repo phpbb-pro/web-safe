@@ -47,8 +47,8 @@ class PaymentSetupController extends Controller
             'intent' => 'CAPTURE',
             'application_context' => [
                 'brand_name'    => 'phpbb.pro',
-                'return_url'    => "http://localhost:3000/$ext/success",
-                'cancel_url'    => "http://localhost:3000/$ext/cancel",
+                'return_url'    => "http://phpbb.pro/$ext/success",
+                'cancel_url'    => "http://phpbb.pro/$ext/cancel",
                 'user_action' => 'PAY_NOW',
                 'landing_page' => 'BILLING',
                 'shipping_preference'   => 'NO_SHIPPING',

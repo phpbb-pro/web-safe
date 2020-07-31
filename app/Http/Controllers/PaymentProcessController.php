@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Orders\OrdersCaptureRequest;
 use PayPalHttp\HttpRequest;
-use Illuminate\Support\Facades\Mail;
 use App\Packers\FormsPacker;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\Purchase;
 
 class PaymentProcessController extends Controller
