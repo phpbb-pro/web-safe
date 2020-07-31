@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         \Torann\GeoIP\GeoIPServiceProvider::class,
+        \ZanySoft\Zip\ZipServiceProvider::class,
 
         /*
          * Application Service Providers...
