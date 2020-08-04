@@ -8,7 +8,7 @@ class FormsBuilderController extends Controller
 {
     public function render(Request $request)
     {
-        if (!\App\FormsClient::where('uuid', $request->input('key'))->exists()) {
+        if (!\App\Client::where('uuid', $request->input('key'))->exists()) {
             abort(401);
         }
 

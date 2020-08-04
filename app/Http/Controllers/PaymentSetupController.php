@@ -39,7 +39,7 @@ class PaymentSetupController extends Controller
         $response = $this->client->execute($request);
 
         // save data to the DB
-        $client = new \App\FormsClient;
+        $client = new \App\Client;
         $client->uuid = Str::uuid();
         $client->ext = $ext;
         $client->license = $package;

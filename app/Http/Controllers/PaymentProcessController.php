@@ -53,7 +53,7 @@ class PaymentProcessController extends Controller
         // send ext over to the buyer
         if ($response->result->status == 'COMPLETED') {
             // save data to the DB
-            $client = \App\FormsClient::where('paypal_id', $response->result->id)->first();
+            $client = \App\Client::where('paypal_id', $response->result->id)->first();
             $client->update([
                 'name'  => $response->result->payer->name->given_name,
                 'surname'   => $response->result->payer->name->surname,
