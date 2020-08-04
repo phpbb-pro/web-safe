@@ -18,7 +18,7 @@ class CreateClientsTable extends Migration
             $table->uuid('uuid');
             $table->enum('ext', ['forms']);
             $table->enum('license', ['basic', 'extended', 'reseller']);
-            $table->string('paypal_id');
+            $table->string('paypal_id')->unique();
             $table->string('name')->nullable();
             $table->string('surname')->nullable();
             $table->string('paypal_email')->nullable();
