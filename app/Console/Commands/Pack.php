@@ -13,7 +13,7 @@ class Pack extends Command
      *
      * @var string
      */
-    protected $signature = 'pack {ext} {license} {name}';
+    protected $signature = 'pack {ext} {license} {name} {uuid?}';
 
     /**
      * The console command description.
@@ -41,6 +41,6 @@ class Pack extends Command
     {
         $class = '\\App\\Packers\\' . ucfirst($this->argument('ext')) . 'Packer';
         $packer = new $class;
-        $packer->pack($this->argument('license'), $this->argument('name'));
+        return $packer->pack($this->argument('license'), $this->argument('name'), $this->argument('uuid'));
     }
 }

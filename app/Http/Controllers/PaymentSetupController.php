@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
+use Illuminate\Support\Str;
 
 class PaymentSetupController extends Controller
 {
@@ -34,7 +35,18 @@ class PaymentSetupController extends Controller
 
         $request->body = $this->buildRequestBody($ext, $currency, $price, $name);
 
+        // get paypal ID and link for the client
         $response = $this->client->execute($request);
+
+        // save data to the DB
+        $client = new \App\FormsClient;
+        $client->uuid = Str::uuid();
+        $client->ext = $ext;
+        $client->license = $package;
+        $client->paypal_id = $response->result->id;
+        $client->save();
+
+        // redirect client to paypal
         return redirect($response->result->links[1]->href);
     }
 

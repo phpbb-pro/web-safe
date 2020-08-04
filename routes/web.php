@@ -32,3 +32,5 @@ foreach (glob('../resources/views/*/pages/*.blade.php') as $file) {
 
 Route::get('/pay/{ext}/{package}', 'PaymentSetupController@payWithpaypal')->name('pay');
 Route::post('/paypal-webhooks', 'PaymentProcessController@process');
+
+Route::get('/forms/builder.js', 'FormsBuilderController@render');

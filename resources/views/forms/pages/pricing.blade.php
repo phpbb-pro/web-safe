@@ -11,19 +11,19 @@
       <article class="pricing__item">
         <h2 class="pricing__name">Basic</h2>
         <data class="pricing__price">{{ price('forms', 'basic') }}</data>
-        <div class="pricing__button"><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></div>
+        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></div>
         <p class="pricing__desc">Unlimited number of forms, visual editor and edit capability.</p>
       </article>
       <article class="pricing__item pricing__item--popular">
         <h2 class="pricing__name">Extended</h2>
         <data class="pricing__price">{{ price('forms', 'extended') }}</data>
-        <div class="pricing__button"><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></div>
+        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></div>
         <p class="pricing__desc">All Basic plus more input types, custom links and permissions.</p>
       </article>
       <article class="pricing__item">
         <h2 class="pricing__name">Reseller</h2>
         <data class="pricing__price">{{ price('forms', 'reseller') }}</data>
-        <div class="pricing__button"><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></div>
+        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></div>
         <p class="pricing__desc">Charge your clients for installation and/or using of this extension.</p>
       </article>
     </section>
@@ -83,8 +83,8 @@
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>3 updates for free <i class="fa fa-question-circle-o pricing__tooltip"><span>Receive next three major<br>updates completely free.</span></i></td>
-            <td></td>
+            <td>Updates <i class="fa fa-question-circle-o pricing__tooltip"><span>Receive new version of the <br>extension for free.</span></i></td>
+            <td>Bug fixes only</td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
@@ -108,9 +108,9 @@
           </tr>
           <tr>
             <td></td>
-            <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></td>
-            <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></td>
-            <td><a class="button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></td>
+            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></td>
+            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></td>
+            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></td>
           </tr>
         </tbody>
       </table>

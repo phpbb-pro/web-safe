@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use ZanySoft\Zip\Zip;
 
 class Packer {
-    public function pack($license, $name)
+    public function pack($license, $name, $client_uuid)
     {
         $timestamp = microtime(true);
 
@@ -17,10 +17,11 @@ class Packer {
         // perform additional tasks special to ext/license/name
         $this->additional_tasks($license, $name, $timestamp);
 
-        // add licensee name
+        // add licensee name and client uuid
         foreach (Storage::allFiles("tmp/$timestamp/senky/{$this->name}") as $file) {
             $contents = Storage::get($file);
             $contents = str_replace('{{LICENSEE}}', $name, $contents);
+            $contents = str_replace('{{LICENSEE_KEY}}', $client_uuid, $contents);
             Storage::put($file, $contents);
         }
 

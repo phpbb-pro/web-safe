@@ -1,14 +1,15 @@
-License for Mixed Content Fixer Extension by Jakub Senko
+Basic license for Forms Extension by Jakub Senko
 
 1. Definitions
-*Item* is Mixed Content Fixer Extension by Jakub Senko.
+*Item* is Forms Extension by Jakub Senko.
 
 *Website* is a set of related web pages located under a single domain name.
 
-*Update* is a new version of the Item.
+*Security update* is a new version of the Item which reduces the risk
+                  of security breach through the public endpoints of the Item.
 
-*Minor or Major phpBB® update* is a new version of phpBB® that changes the first
-                               or the second number of version number.
+*Bug update* is a new version of the Item which removes some unintended behaviour
+             of the Item.
 
 *End product* is a work that incorporates the Item as well as other things,
               so that it is larger in scope and different in nature than the Item.
@@ -19,7 +20,8 @@ License for Mixed Content Fixer Extension by Jakub Senko
 
 2. The License grants you, the purchaser, an ongoing, non-exclusive,
    worldwide license to make use of the Item on one Website. You are eligible
-   to receive the Updates of the Item until next Minor or Major phpBB® update.
+   to receive the Security and Bug updates of the Item within next two
+   years.
 
 3. You are licensed to use the Item to create one single End Product for yourself
    or for one client.
@@ -62,7 +64,7 @@ License for Mixed Content Fixer Extension by Jakub Senko
     making copies of or distributing the End Product until you remove the Item from it.
 
 14. The author of the Item retains ownership of the Item but grants you the license on
-    these terms for 4.99 EUR. This license is between the author of the Item and you.
+    these terms. This license is between the author of the Item and you.
 
 15. You are not eligible for a refund of already purchased license.
 

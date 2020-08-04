@@ -7,10 +7,11 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class Purchase extends Mailable
+class FormsPurchase extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $license;
     protected $name;
     protected $zip_name;
 
@@ -19,8 +20,9 @@ class Purchase extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $zip_name)
+    public function __construct($license, $name, $zip_name)
     {
+        $this->license = $license;
         $this->name = $name;
         $this->zip_name = $zip_name;
     }
@@ -32,7 +34,8 @@ class Purchase extends Mailable
      */
     public function build()
     {
-        return $this->text('forms.emails.purchase')
+        return $this->subject('phpBB | Forms - ' . ucfirst($this->license) . ' license')
+                    ->text('forms.emails.purchase')
                     ->with([
                         'name'  => $this->name,
                         'link'  => url('storage/' . $this->zip_name),

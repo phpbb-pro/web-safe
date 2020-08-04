@@ -8,7 +8,6 @@ use PayPalCheckoutSdk\Orders\OrdersCaptureRequest;
 use PayPalHttp\HttpRequest;
 use App\Packers\FormsPacker;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\Purchase;
 
 class PaymentProcessController extends Controller
 {
@@ -53,14 +52,24 @@ class PaymentProcessController extends Controller
 
         // send ext over to the buyer
         if ($response->result->status == 'COMPLETED') {
-            $packer = new FormsPacker;
-            $zip_name = $packer->pack('basic', $response->result->payer->name->given_name . ' ' . $response->result->payer->name->surname);
+            // save data to the DB
+            $client = \App\FormsClient::where('paypal_id', $response->result->id)->first();
+            $client->update([
+                'name'  => $response->result->payer->name->given_name,
+                'surname'   => $response->result->payer->name->surname,
+                'paypal_email'  => $response->result->payer->email_address,
+                'contact_email' => $response->result->payer->email_address,
+                'country'   => $response->result->payer->address->country_code,
+            ]);
 
-            Mail::to($response->result->payer->email_address)
+            $packer = '\\App\\Packers\\' . ucfirst($client->ext) . 'Packer';
+            $packer = new $packer;
+            $zip_name = $packer->pack('basic', $client->name . ' ' . $client->surname, $client->uuid);
+
+            $mailer = '\\App\\Mail\\' . ucfirst($client->ext) . 'Purchase';
+            Mail::to($client->contact_email)
                 ->bcc('private-013@example.invalid')
-                ->send(new Purchase($response->result->payer->name->given_name, $zip_name));
-
-            // $response->result->payer->address->country_code
+                ->send(new $mailer($client->license, $client->name, $zip_name));
         }
 
         return response('', 200);

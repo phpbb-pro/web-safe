@@ -7,6 +7,7 @@
 cd phpbb.pro/web
 git pull
 composer install --no-interaction --prefer-dist --no-dev --no-progress --no-suggest --optimize-autoloader
+php artisan migrate
 php artisan view:cache
 php artisan geoip:update
 rm -rf public/css public/images public/js
