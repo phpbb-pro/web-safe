@@ -14,7 +14,7 @@
       <header class="header">
         <nav class="nav">
           <ul class="menu">
-            <li class="menu__item menu__item--logo"><a href="{{ route('forms/') }}"><i class="fa fa-home" aria-hidden="true"></i> <span>phpBB</span> <strong>Forms</strong> Extension</a></li>
+            <li class="menu__item menu__item--logo"><a href="{{ route('forms/') }}"><i class="fa fa-home" aria-hidden="true"></i> phpBB <strong>Forms</strong> Extension</a></li>
             <li class="menu__item"><a href="{{ route('forms/') }}#features"><i class="fa fa-star-o" aria-hidden="true"></i> Features</a></li>
             <li class="menu__item"><a href="{{ route('forms/demo') }}"><i class="fa fa-laptop" aria-hidden="true"></i> Demo</a></li>
             <li class="menu__item">
