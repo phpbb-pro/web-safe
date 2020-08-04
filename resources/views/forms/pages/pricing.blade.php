@@ -54,12 +54,6 @@
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Input types <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date, time, selectbox, checkbox, <br>radio, textarea, plain HTML, CAPTCHA.</span></i></td>
-            <td>Basic <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date,<br>time, selectbox, textarea.</span></i></td>
-            <td><i class="fa fa-check" aria-hidden="true"></i></td>
-            <td><i class="fa fa-check" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
             <td>Edit form <i class="fa fa-question-circle-o pricing__tooltip"><span>When user edits the post, they will be shown the same<br>form with all the previously entered data prefilled.</span></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
@@ -72,6 +66,18 @@
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
+            <td>Input types <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date, time, selectbox, checkbox, <br>radio, textarea, plain HTML, CAPTCHA.</span></i></td>
+            <td>Basic <i class="fa fa-question-circle-o pricing__tooltip"><span>Text, number, email, tel, date,<br>time, selectbox, textarea.</span></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td>Updates <i class="fa fa-question-circle-o pricing__tooltip"><span>Receive new versions <br>of the extension for free.</span></i></td>
+            <td>Bug fixes only <i class="fa fa-question-circle-o pricing__tooltip"><span>You won't receive <br>any new features.</span></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
             <td>Custom link <i class="fa fa-question-circle-o pricing__tooltip"><span>Add your form a nice URL,<br>e.g.: <code>yourforum.com/form/application</code></span></i></td>
             <td></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
@@ -80,12 +86,6 @@
           <tr>
             <td>Permissions <i class="fa fa-question-circle-o pricing__tooltip"><span>Manage what board groups can submit the form. <br>Even guest group can be selected!</span></i></td>
             <td></td>
-            <td><i class="fa fa-check" aria-hidden="true"></i></td>
-            <td><i class="fa fa-check" aria-hidden="true"></i></td>
-          </tr>
-          <tr>
-            <td>Updates <i class="fa fa-question-circle-o pricing__tooltip"><span>Receive new version of the <br>extension for free.</span></i></td>
-            <td>Bug fixes only</td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
@@ -117,4 +117,50 @@
       </table>
     </div>
   </main>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "phpBB Forms Extension - Basic license",
+      "description": "Unlimited number of forms, visual editor and edit capability.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://phpbb.pro/pricing#basic",
+        "priceCurrency": "{{ price('forms', 'basic', true)[0] }}",
+        "price": "{{ price('forms', 'basic', true)[1] }}",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "phpBB Forms Extension - Extended license",
+      "description": "All Basic plus more input types, custom links and permissions.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://phpbb.pro/pricing#extended",
+        "priceCurrency": "{{ price('forms', 'extended', true)[0] }}",
+        "price": "{{ price('forms', 'extended', true)[1] }}",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "phpBB Forms Extension - Reseller license",
+      "description": "Charge your clients for installation and/or using of this extension.",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://phpbb.pro/pricing#reseller",
+        "priceCurrency": "{{ price('forms', 'reseller', true)[0] }}",
+        "price": "{{ price('forms', 'reseller', true)[1] }}",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
 @endsection

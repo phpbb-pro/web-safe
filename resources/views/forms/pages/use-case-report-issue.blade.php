@@ -13,7 +13,7 @@
     <h2 class="use-case__how-title">How can you do this?</h2>
     <ol class="use-case__how-list">
       <li>Create a new form in ACP -> Extensions -> Forms.</li>
-      <li>Select a forum where you want to collect the applications. Depending on the severity, make forum public (for bug reports) or private (for security reports).<br>Pro tip: Use <a href="https://www.phpbb.com/customise/db/extension/readotherstopics/" target="_blank" ref="noopener noreferrer">Read other's topics Permission</a> extension to make even forum for security reports public.</li>
+      <li>Select a forum where you want to collect the applications. Depending on the severity, make forum public (for bug reports) or private (for security reports).<br>Pro tip: Use <a href="https://www.phpbb.com/customise/db/extension/readotherstopics/" target="_blank" rel="noopener noreferrer">Read other's topics Permission</a> extension to make even forum for security reports public.</li>
       <li>Make sure to set <em>Replace posting page</em> to <em>Yes</em> to ensure no-one bypasses the form.</li>
       <li>
         Compose the form:

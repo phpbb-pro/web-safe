@@ -24,7 +24,7 @@
         </ol>
       </li>
       <li>Build a form template. For the best reading experience, just stack the <em>[b]input name[/b]: input value</em> below each other. But you can also compose a table or any other template that will make it easy and fast to scan the data.</li>
-      <li>Save the form. Grab the form URL and post it where your potential participants usually are. A good place can be in a menu, a global announcement, the <a href="https://www.phpbb.com/customise/db/extension/boardannouncements/" target="_blank" ref="noopener noreferrer">Board Announcements</a> extension or <a href="https://www.phpbb.com/customise/db/extension/massnotification/" target="_blank" ref="noopener noreferrer">Mass notification</a> extension.</li>
+      <li>Save the form. Grab the form URL and post it where your potential participants usually are. A good place can be in a menu, a global announcement, the <a href="https://www.phpbb.com/customise/db/extension/boardannouncements/" target="_blank" rel="noopener noreferrer">Board Announcements</a> extension or <a href="https://www.phpbb.com/customise/db/extension/massnotification/" target="_blank" rel="noopener noreferrer">Mass notification</a> extension.</li>
       <li>Wait for the responses to come and process the data. Note that the data are always linked to the registered participant which may help you a lot with deep-understanding of the response.</li>
     </ol>
   </main>

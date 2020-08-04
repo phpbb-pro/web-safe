@@ -1,7 +1,11 @@
 User-agent: *
+Disallow: /license/forms/basic-license.txt
+Disallow: /license/forms/extended-license.txt
+Disallow: /license/forms/reseller-license.txt
+
+Disallow: /license/httpproxy/license.txt
+
 Disallow: /license/pushnotifications/translator-license.txt
 Disallow: /license/pushnotifications/standard-license.txt
 Disallow: /license/pushnotifications/extended-license.txt
 Disallow: /license/pushnotifications/reseller-license.txt
-
-Disallow: /license/httpproxy/license.txt

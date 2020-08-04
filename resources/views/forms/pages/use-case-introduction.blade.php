@@ -24,7 +24,7 @@
         </ol>
       </li>
       <li>Build a form template. For the best reading experience, just stack the <em>[b]input name[/b]: input value</em> below each other with <em>Text Area</em> value as last because it can contain multiple lines.</li>
-      <li>Save the form. <em>New topic</em> buttons in the selected forum will automatically display the form if you've set <em>Replace posting page</em> to <em>Yes</em>. If not, place a form link somewhere your newbies are. It is a great idea to post it to <a href="https://www.phpbb.com/customise/db/extension/private_message_welcome/" target="_blank" ref="noopener noreferrer">Private welcome message</a>.</li>
+      <li>Save the form. <em>New topic</em> buttons in the selected forum will automatically display the form if you've set <em>Replace posting page</em> to <em>Yes</em>. If not, place a form link somewhere your newbies are. It is a great idea to post it to <a href="https://www.phpbb.com/customise/db/extension/private_message_welcome/" target="_blank" rel="noopener noreferrer">Private welcome message</a>.</li>
     </ol>
   </main>
 

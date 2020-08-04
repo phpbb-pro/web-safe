@@ -26,7 +26,7 @@
         </ol>
       </li>
       <li>Build a form template. For the best reading experience, just stack the <em>[b]input name[/b]: input value</em> below each other with <em>Text Area</em> value as last because it can contain multiple lines.</li>
-      <li>Save the form. Grab the form URL and post it where your applicants usually are. A good place can be in a menu, a global announcement, the <a href="https://www.phpbb.com/customise/db/extension/boardannouncements/" target="_blank" ref="noopener noreferrer">Board Announcements</a> extension or <a href="https://www.phpbb.com/customise/db/extension/massnotification/" target="_blank" ref="noopener noreferrer">Mass notification</a> extension.</li>
+      <li>Save the form. Grab the form URL and post it where your applicants usually are. A good place can be in a menu, a global announcement, the <a href="https://www.phpbb.com/customise/db/extension/boardannouncements/" target="_blank" rel="noopener noreferrer">Board Announcements</a> extension or <a href="https://www.phpbb.com/customise/db/extension/massnotification/" target="_blank" rel="noopener noreferrer">Mass notification</a> extension.</li>
     </ol>
   </main>
 
