@@ -8,16 +8,16 @@ class FormsBuilderController extends Controller
 {
     public function render(Request $request)
     {
-        $client = \App\Client::where('uuid', $request->input('key'));
+        $client = \App\Client::where('uuid', $request->input('key'))->first();
         if (!$client->exists()) {
             abort(401);
         }
 
-        $client = new \App\FormsBuilderTracker;
-        $client->client_id = $client->id;
-        $client->host = $request->getHttpHost();
-        $client->referer = $request->server('HTTP_REFERER');
-        $client->save();
+        $track = new \App\FormsBuilderTracker;
+        $track->client_id = $client->id;
+        $track->host = $request->getHttpHost();
+        $track->referer = $request->server('HTTP_REFERER');
+        $track->save();
 
         return response(file_get_contents(storage_path('app/form-builder.js')))
                 ->header('Content-Type', 'text/javascript');

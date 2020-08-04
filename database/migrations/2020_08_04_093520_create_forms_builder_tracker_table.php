@@ -16,8 +16,8 @@ class CreateFormsBuilderTrackerTable extends Migration
         Schema::create('forms_builder_tracker', function (Blueprint $table) {
             $table->id();
             $table->foreignId('client_id')->constrained();
-            $table->string('host');
-            $table->string('referer');
+            $table->string('host')->nullable();
+            $table->string('referer')->nullable();
             $table->timestamp('created_at');
         });
     }
