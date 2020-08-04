@@ -20,7 +20,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "instant.page": "^5.1.0",
-        "lozad": "^1.15.0"
+        "instant.page": "^5.1.0"
     }
 }

@@ -27,9 +27,9 @@
       <p class="center-header__text">phpBB Forms extension allows you to generate structured forms instead of default text method. Explore all the features that enable your members be more confident while creating new topics.</p>
       <article class="feature feature--right">
         <div class="feature__img-container">
-          <video class="feature__img lozad" autoplay loop muted playsinline>
-            <source data-src="{{ mix('/images/forms/phpbb-forms-review-report-request-application.webm') }}" type="video/webm">
-            <source data-src="{{ mix('/images/forms/phpbb-forms-review-report-request-application.mp4') }}" type="video/mp4">
+          <video class="feature__img" loading="lazy" autoplay loop muted playsinline>
+            <source src="{{ mix('/images/forms/phpbb-forms-review-report-request-application.webm') }}" type="video/webm">
+            <source src="{{ mix('/images/forms/phpbb-forms-review-report-request-application.mp4') }}" type="video/mp4">
           </video>
         </div>
         <div class="feature__copy">
@@ -41,9 +41,10 @@
       <article class="feature feature--grey">
         <div class="feature__img-container">
           <img
-            class="feature__img lozad"
-            data-src="{{ mix('/images/forms/phpbb-forms-drag-drop-editor.jpg') }}"
-            data-srcset="{{ mix('/images/forms/phpbb-forms-drag-drop-editor.jpg') }},
+            class="feature__img"
+            loading="lazy"
+            src="{{ mix('/images/forms/phpbb-forms-drag-drop-editor.jpg') }}"
+            srcset="{{ mix('/images/forms/phpbb-forms-drag-drop-editor.jpg') }},
                     {{ mix('/images/forms/phpbb-forms-drag-drop-editor@2x.jpg') }} 2x"
             width="489"
             height="206"
@@ -58,9 +59,10 @@
       <article class="feature feature--right">
         <div class="feature__img-container">
           <img
-            class="feature__img lozad"
-            data-src="{{ mix('/images/forms/phpbb-forms-replace-or-link.jpg') }}"
-            data-srcset="{{ mix('/images/forms/phpbb-forms-replace-or-link.jpg') }},
+            class="feature__img"
+            loading="lazy"
+            src="{{ mix('/images/forms/phpbb-forms-replace-or-link.jpg') }}"
+            srcset="{{ mix('/images/forms/phpbb-forms-replace-or-link.jpg') }},
                     {{ mix('/images/forms/phpbb-forms-replace-or-link@2x.jpg') }} 2x"
             width="503"
             height="284"
@@ -75,9 +77,10 @@
       <article class="feature feature--light-blue">
         <div class="feature__img-container">
           <img
-            class="feature__img lozad"
-            data-src="{{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs.jpg') }}"
-            data-srcset="{{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs.jpg') }},
+            class="feature__img"
+            loading="lazy"
+            src="{{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs.jpg') }}"
+            srcset="{{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs.jpg') }},
                     {{ mix('/images/forms/phpbb-forms-wide-variety-of-inputs@2x.jpg') }} 2x"
             width="503"
             height="304"
@@ -91,9 +94,9 @@
 
       <article class="feature feature--right">
         <div class="feature__img-container">
-          <video class="feature__img lozad" autoplay loop muted playsinline>
-            <source data-src="{{ mix('/images/forms/phpbb-forms-edit.webm') }}" type="video/webm">
-            <source data-src="{{ mix('/images/forms/phpbb-forms-edit.mp4') }}" type="video/mp4">
+          <video class="feature__img" loading="lazy" autoplay loop muted playsinline>
+            <source src="{{ mix('/images/forms/phpbb-forms-edit.webm') }}" type="video/webm">
+            <source src="{{ mix('/images/forms/phpbb-forms-edit.mp4') }}" type="video/mp4">
           </video>
         </div>
         <div class="feature__copy">
