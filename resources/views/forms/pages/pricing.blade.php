@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'Pricing | phpBB Forms Extension')
+@section('desc', 'Find the package that best suits your needs. Enjoy the core features of phpBB Forms extension for the lowest price or get more with Extended and Reseller licenses.')
 
 @section('content')
   <main class="with-bottom-padding">

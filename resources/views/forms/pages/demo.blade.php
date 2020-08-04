@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'Demo | phpBB Forms Extension')
+@section('desc', 'Try phpBB Forms extension by yourself. Create forms in ACP and see them in action as user right away.')
 
 @section('content')
   <main class="with-bottom-padding">

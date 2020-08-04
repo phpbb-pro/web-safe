@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'phpBB Forms Extension')
+@section('desc', 'Lead your phpBB board members while they create review, report, request, application or any kind of structured content using forms.')
 
 @section('content')
   <main>

@@ -10,6 +10,7 @@
     </script>
 
     <title>phpBB | Forms Extension</title>
+    <meta name="description" content="Learn how to install and use phpBB Forms extension.">
 
     <style>
       html {

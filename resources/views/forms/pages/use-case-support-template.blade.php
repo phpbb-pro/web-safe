@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'Support template use case | phpBB Forms Extension')
+@section('desc', 'Gather all the information at once. No follow-up questions needed anymore by using phpBB Forms extension.')
 
 @section('content')
   <p><a class="use-case__backlink" href="{{ route('forms/use-cases') }}">See all use cases</a></p>

@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'Advertisement use case | phpBB Forms Extension')
+@section('desc', 'Make sure your advertisers input every important detail of the offer by using phpBB Forms extension.')
 
 @section('content')
   <p><a class="use-case__backlink" href="{{ route('forms/use-cases') }}">See all use cases</a></p>

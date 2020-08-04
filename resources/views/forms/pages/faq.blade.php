@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'Use Cases | phpBB Forms Extension')
+@section('docs', 'Get your most frequently asked questions about phpBB Forms extension answered.')
 
 @section('content')
   <main>

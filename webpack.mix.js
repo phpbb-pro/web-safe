@@ -13,8 +13,7 @@ const glob = require('glob');
  */
 
 // forms
-mix.js('resources/js/silverlike/lazyload.js', 'public/js/silverlike')
-    .js('resources/js/silverlike/app.js', 'public/js/silverlike')
+mix.js('resources/js/silverlike/app.js', 'public/js/silverlike')
     .sass('resources/sass/silverlike/silverlike.scss', 'public/css')
 
 // httpproxy

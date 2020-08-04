@@ -1,6 +1,7 @@
 @extends('_layouts.silverlike')
 
 @section('title', 'Use Cases | phpBB Forms Extension')
+@section('desc', 'Read how phpBB Forms extension can help with common use-cases many forum admins struggle with.')
 
 @section('content')
   <main class="with-bottom-padding">
