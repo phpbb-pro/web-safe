@@ -15,7 +15,6 @@ class FormsBuilderController extends Controller
 
         $track = new \App\FormsBuilderTracker;
         $track->client_id = $client->id;
-        $track->host = $request->getHttpHost();
         $track->referer = $request->server('HTTP_REFERER');
         $track->save();
 
