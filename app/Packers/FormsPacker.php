@@ -15,9 +15,9 @@ class FormsPacker extends Packer {
                 "tmp/$timestamp/senky/forms/controls/type/captcha.php",
                 "tmp/$timestamp/senky/forms/controls/type/checkbox.php",
                 "tmp/$timestamp/senky/forms/controls/type/radio.php",
-                "tmp/$timestamp/senky/forms/styles/all/template/types/captcha.php",
-                "tmp/$timestamp/senky/forms/styles/all/template/types/checkbox-group.php",
-                "tmp/$timestamp/senky/forms/styles/all/template/types/radio-group.php",
+                "tmp/$timestamp/senky/forms/styles/all/template/types/captcha.html",
+                "tmp/$timestamp/senky/forms/styles/all/template/types/checkbox-group.html",
+                "tmp/$timestamp/senky/forms/styles/all/template/types/radio-group.html",
                 "tmp/$timestamp/senky/forms/extended.php",
             ]);
         }
