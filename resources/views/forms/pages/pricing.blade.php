@@ -108,6 +108,12 @@
             <td>Unlimited</td>
           </tr>
           <tr>
+            <td>License details</td>
+            <td><a class="pricing__table-license-link" href="{{ url('license/forms/basic-license.txt') }}">Basic</a></td>
+            <td><a class="pricing__table-license-link" href="{{ url('license/forms/extended-license.txt') }}">Extended</a></td>
+            <td><a class="pricing__table-license-link" href="{{ url('license/forms/reseller-license.txt') }}">Reseller</a></td>
+          </tr>
+          <tr>
             <td></td>
             <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></td>
             <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></td>
@@ -117,6 +123,17 @@
       </table>
     </div>
   </main>
+
+  <section class="cta">
+    <h2 class="cta__title">Questions before purchase?</h2>
+  
+    <p class="center-header__text">
+      <a class="js-mailto button">Contact author</a>
+    </p>
+    <script>
+      document.querySelector('.js-mailto').href = ['bWFpbHRvOnNlbg==', 'a3lAcGhwYmIucHJv'].map(atob).join('') + '?subject=phpBB%20Forms%20question';
+    </script>
+  </section>
 
   <script type="application/ld+json">
     {

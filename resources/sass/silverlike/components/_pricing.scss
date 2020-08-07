@@ -95,6 +95,7 @@ $pricing-breakpoint: 45rem;
     display: none;
 
     @media (min-width: $pricing-breakpoint) {
+      display: table-cell;
       color: #222;
     }
   }
@@ -160,6 +161,11 @@ $pricing-breakpoint: 45rem;
     @media (min-width: $pricing-breakpoint) {
       content: none;
     }
+  }
+
+  .pricing__table-license-link {
+    color: #105289;
+    text-decoration: none;
   }
 }
 

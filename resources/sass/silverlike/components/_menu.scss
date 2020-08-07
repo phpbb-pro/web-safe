@@ -10,6 +10,8 @@ $menu-breakpoint: 53rem;
   @media (min-width: $menu-breakpoint) {
     display: flex;
     justify-content: flex-end;
+    white-space: normal;
+    overflow-x: visible;
   }
 
   a {
@@ -39,7 +41,7 @@ $menu-breakpoint: 53rem;
   left: 1rem;
 
   @media (min-width: $menu-breakpoint) {
-    display: list-item;
+    display: inline-block;
     margin-right: auto;
   }
 }
