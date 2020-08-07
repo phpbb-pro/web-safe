@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /forms/docs
 Disallow: /license/forms/basic-license.txt
 Disallow: /license/forms/extended-license.txt
 Disallow: /license/forms/reseller-license.txt

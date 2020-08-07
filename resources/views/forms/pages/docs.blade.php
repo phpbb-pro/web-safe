@@ -147,10 +147,10 @@
     <ol>
       <li>Go to <strong>ACP</strong> -> <strong>Extensions</strong> -> <strong>Forms</strong>.</li>
       <li>Click <strong>Add a form</strong> button in the bottom right corner.</li>
-      <li>A form composer is presented to you. First of all, add new form a <strong>name</strong>. The name is only used internally, for you and other admins to find it easily.</li>
+      <li>A form composer is presented to you. First of all, add new form a <strong>name</strong>. The name is only used internally, for you and other admins to identify it easily.</li>
       <li>Select a <strong>forum</strong> to which the submissions will be posted. You must select one forum and no other form can use that forum anymore.</li>
-      <li>Fill in the <strong>subject</strong> that will be used as new topic subject when user submits the form. It can be static or you can use placeholders to be replaced with actual user data. More on that later.</li>
-      <li>Choose, if you want to <strong>replace posting page</strong> or not. If you opt to replace it, your users will have no other means to post into the selected forum. They will be forced to use this form and all forum permissions will be honored (<em>Can read forum</em>, <em>Can start new topics</em>, <em>Can edit own posts</em>). It is very handy for cases such as <a href="https://phpbb.pro/forms/use-case-support-template">support tickets</a>. On the contrary, sometimes you want your users post into the forum traditional way, but improve their experience using a form. Typical example is a new member <a href="https://phpbb.pro/forms/use-case-introduction">introduction</a>. Or you want to collect data in hidden forum. If you do not replace posting page, you will have to link to the form somewhere so your users can access it. A link to the form will be generated once you submit this composer. With this option turned off, any registered user can submit the form. It bypasses all permission checks, so you can collect the submissions in hidden forum as well.</li>
+      <li>Fill in the <strong>subject</strong> that will be used as a new topic subject when user submits the form. It can be static or you can use placeholders to be replaced with actual user data. More on that later.</li>
+      <li>Choose if you want to <strong>replace posting page</strong> or not. If you opt to replace it, your users will have no other means to post into the selected forum. They will be forced to use this form and all forum permissions will be honored (<em>Can read forum</em>, <em>Can start new topics</em>, <em>Can edit own posts</em>). It is very handy for cases such as <a href="https://phpbb.pro/forms/use-case-support-template">support tickets</a>. On the contrary, sometimes you want your users post into the forum traditional way, but improve their experience using a form. Typical example is a new member <a href="https://phpbb.pro/forms/use-case-introduction">introduction</a>. Or you want to <a href="https://phpbb.pro/forms/use-case-collect-data">collect data</a> in hidden forum. If you do not replace posting page, you will have to link to the form somewhere so your users can access it. A link to the form will be generated once you submit this composer. With this option turned off, any registered user can submit the form (<em>Extended license</em> users can restrict posting to selected groups). It bypasses all permission checks, so you can collect the submissions in hidden forum as well.</li>
       <li>If you have bought an <em>Extended license</em>, you can choose your own <strong>form link</strong> to give it nicer look and more credibility.</li>
       <li>
         Now to the most exciting part. <strong>Form inputs</strong> section allows you to compose the form in a visual way. Drag the field from the right area to the left area to include it in the form and access its options. You can reorder the inputs once they are in the left area. The form will display the inputs in the exact same order. Based on your license, here is the list of all available inputs:
@@ -181,11 +181,11 @@
           </li>
           <li>
             <h4>CAPTCHA</h4>
-            This input will be replaced with a standard CAPTCHA your board uses in registration and/or posting pages. This will help you fight spambots since forms are a new way to post into the forums. Make sure to include it only once, preferably at the very end of the form.
+            This input will be replaced with a standard CAPTCHA your board uses in registration and/or posting pages. This will help you fight spambots since forms are a new way to post into the forums. Preferably include it at the very end of the form.
           </li>
         </ul>
       </li>
-      <li>Lastly, you are presented with a <strong>Form template</strong> - a BBcode-enabled editor which allows you to compose the final output of the form. The form will collect the data, but you need a way to display them. This field allows you to do that. Format it to your liking. In order to use the data from the form, use <em>Name</em> of the input in between the curly brackets. This is called placeholder and it will be replaced with an actual user data. So if your input's <em>Name</em> is <samp>first_name</samp>, you would use <samp>{first_name}</samp> to replace it with an actual user first name. Every input has auto-generated <em>Name</em>, but I encourage you to change it to something more meaningful.</li>
+      <li>Lastly, you are presented with a <strong>Form template</strong> - a BBcode-enabled editor which allows you to compose the final output of the form. The form will collect the data, you define how they are presented to the viewers. This field allows you to do that. Format it to your liking. In order to use the data from the form, use <em>Name</em> of the input in between the curly brackets. This is called placeholder and it will be replaced with an actual user data. So if your input's <em>Name</em> is <samp>first_name</samp>, you would use <samp>{first_name}</samp> to replace it with an actual user first name. Every input has auto-generated <em>Name</em>, but I encourage you to change it to something more meaningful.</li>
       <li>If you are happy with the template, you can preview it using <strong>Preview</strong> button.</li>
       <li>Once everything looks good, hit <strong>Submit</strong> button to save the form.</li>
       <li>You will be redirected back to the list of forms, where you can now see the form link. In case you didn't replace posting page, you need to share this link in order for your users to access it.</li>
@@ -196,7 +196,7 @@
       <li>Go to <strong>ACP</strong> -> <strong>Extensions</strong> -> <strong>Forms</strong>.</li>
       <li>Click on the <strong>Form name</strong> or gear icon in <strong>Actions</strong> column.</li>
       <li>Edit the form to your liking.</li>
-      <li>Beware the fact, that old submissions won't be changed if you change any of the <strong>Form inputs</strong>. If you add new inputs, users editing old post will be forced to add in new data. If you remove some inputs, old submissions will still display them.</li>
+      <li>Beware the fact that old submissions won't be changed if you change any of the <strong>Form inputs</strong>. If you add new inputs, users editing old post will be forced to add in new data. If you remove some inputs, old submissions will still display them.</li>
       <li>Click <strong>Submit</strong> button.</li>
     </ol>
 
@@ -220,7 +220,6 @@
 
     <h3 id="usage-guide-use-form">Use a form</h3>
     <ol>
-      <li>Make sure you are logged in, since only logged in users can use forms.</li>
       <li>Navigate directly to any form link or navigate to the forum which replaces posting with form and click <strong>New Topic</strong> button.</li>
       <li>Fill in the form with your data.</li>
       <li>You can preview the final result with <strong>Preview</strong> button.</li>
@@ -251,7 +250,7 @@
     <dd>No, this extension is a brand new one and much, much better! The ACP page is re-thought completely to match the most advanced form generators. It includes drag'n'drop editor, preview mode and much more. It allows you to replace the posting page as well as link to special form URL to record the submissions in the hidden forums. All in all, it isn't a port. It's an evolution!</dd>
   
     <dt>Is this phpBB extension better than <a href="https://www.phpbb.com/customise/db/extension/posting_template_4/" target="_blank" rel="noopener noreferrer">Posting Template</a> extension?</dt>
-    <dd>Absolutely! I wouldn't even compare one to the other. Posting Template doesn't restrict users from posting whatever they want. It merely guides them, while Forms extension displays a proper form with both client and server-side validation. Also, this extension allows your users to post to the hidden/team forums by exposing the form in a special URL. This makes it ideal for security report or application-related use-cases.</dd>
+    <dd>Absolutely! I wouldn't even compare one to the other. Posting Template doesn't restrict users from posting whatever they want. It merely guides them, while Forms extension displays a proper form with both client and server-side validation. Also, this extension allows your users to post to the hidden/team forums by exposing the form in a special URL. This makes it ideal for private data collection, security reports or application-related use-cases.</dd>
   
     <dt>Does this extension support editing?</dt>
     <dd>Yes. Other similar extensions lacked this vital feature. Without editing support, a user can fill in the form and then quicky edit the post to their liking, destructing the predefined structure. This extension displays the same form when you hit Edit button, with all the data prefilled.</dd>

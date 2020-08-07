@@ -1,13 +1,44 @@
+$use-cases-breakpoint-1: 32rem;
+$use-cases-breakpoint-2: 48rem;
+
+.use-cases__main-case {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  .fa {
+    font-size: 2rem;
+    color: #115098;
+  }
+}
+
+.use-cases__delimiter {
+  margin: 0 1rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
 .use-cases {
-  padding: 3rem 1rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  padding: 0 1rem;
+
+  @media (min-width: $use-cases-breakpoint-1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    padding: 3rem 1rem 0;
+  }
+
+  @media (min-width: $use-cases-breakpoint-2) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .use-cases__case {
   text-align: center;
+  padding: 3rem 0;
+
+  @media (min-width: $use-cases-breakpoint-1) {
+    padding: 0;
+  }
 
   .fa {
     font-size: 2rem;

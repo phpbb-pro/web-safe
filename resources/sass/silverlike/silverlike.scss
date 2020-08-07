@@ -1,5 +1,8 @@
 @import "variables";
 
+$html-breakpoint: 40rem;
+$max-width: 74rem;
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,34 +15,54 @@ html {
 
 body {
   margin: 0;
-  padding: 0.75rem 0;
   background-color: #f5f7fa;
   font-family: $font-verdana;
+
+  @media (min-width: $max-width) {
+    padding: 0.75rem 0;
+  }
 }
 
 .wrap {
   position: relative;
   background-color: #fff;
-  border: 0.0625rem solid #e6e9ed;
-  border-radius: 0.5rem;
   margin: 0 auto;
-  padding: 1rem 0;
-  max-width: 74rem;
+  padding: 6rem 0 1rem;
+  max-width: $max-width;
+
+  @media (min-width: $html-breakpoint) {
+    padding: 1rem 0;
+  }
+
+  @media (min-width: $max-width) {
+    border: 0.0625rem solid #e6e9ed;
+    border-radius: 0.5rem;
+  }
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
-  margin: 0 1rem;
-  border-radius: 0.5rem;
+  width: 100%;
+
+  @media (min-width: $html-breakpoint) {
+    position: sticky;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    width: auto;
+  }
 }
 
 .nav {
   background-color: #cadceb;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.25rem 0;
   box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $html-breakpoint) {
+    position: sticky;
+    border-radius: 0.5rem;
+  }
 }
 
 .with-bottom-padding {

@@ -42,25 +42,25 @@
         </thead>
         <tbody>
           <tr>
-            <td>Unlimited number of forms <i class="fa fa-question-circle-o pricing__tooltip"><span>Build as many forms<br>as you need</span></i></td>
+            <td>Unlimited number of forms <i class="fa fa-question-circle-o pricing__tooltip"><span>Build as many forms <br>as you need</span></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Drag'n'drop editor <i class="fa fa-question-circle-o pricing__tooltip"><span>Compose your form templates with visual editor.<br>No coding knowledge is required.</span></i></td>
+            <td>Drag'n'drop editor <i class="fa fa-question-circle-o pricing__tooltip"><span>Compose your form templates with visual editor. <br>No coding knowledge is required.</span></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Edit form <i class="fa fa-question-circle-o pricing__tooltip"><span>When user edits the post, they will be shown the same<br>form with all the previously entered data prefilled.</span></i></td>
+            <td>Edit form <i class="fa fa-question-circle-o pricing__tooltip"><span>When user edits the post, they will be shown the same <br>form with all the previously entered data prefilled.</span></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Replace posting page <i class="fa fa-question-circle-o pricing__tooltip"><span>You can enforce your users to use a form in order to create new<br>topic or make it optional by providing a special link to the form.</span></i></td>
+            <td>Replace posting page <i class="fa fa-question-circle-o pricing__tooltip"><span>You can enforce your users to use a form in order to create new <br>topic or make it optional by providing a special link to the form.</span></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
@@ -78,7 +78,7 @@
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
           </tr>
           <tr>
-            <td>Custom link <i class="fa fa-question-circle-o pricing__tooltip"><span>Add your form a nice URL,<br>e.g.: <code>yourforum.com/form/application</code></span></i></td>
+            <td>Custom link <i class="fa fa-question-circle-o pricing__tooltip"><span>Add your form a nice URL, <br>e.g.: <code>yourforum.com/form/application</code></span></i></td>
             <td></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>
             <td><i class="fa fa-check" aria-hidden="true"></i></td>

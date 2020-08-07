@@ -8,14 +8,16 @@
     <h1 class="center-header__header">Use Cases</h1>
     <p class="center-header__text">phpBB Forms extension can be used in endless creative ways. However, for convenience, here you can see some common use-cases for inspiration.</p>
 
-    <div class="use-cases">
-      <article class="use-cases__case">
-        <i class="fa fa-database" aria-hidden="true"></i>
-        <h2>Collect data</h2>
-        <p>Manage event registration, conduct a survey or entertain with a test.</p>
-        <p><a href="{{ route('forms/use-case-collect-data') }}">Read more</a></p>
-      </article>
+    <article class="use-cases__main-case">
+      <i class="fa fa-database" aria-hidden="true"></i>
+      <h2>Collect data</h2>
+      <p>Manage event registration, conduct a survey or entertain with a test.</p>
+      <p><a href="{{ route('forms/use-case-collect-data') }}">Read more</a></p>
+    </article>
 
+    <div class="use-cases__delimiter"></div>
+
+    <div class="use-cases">
       <article class="use-cases__case">
         <i class="fa fa-life-ring" aria-hidden="true"></i>
         <h2>Support template</h2>

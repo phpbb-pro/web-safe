@@ -1,5 +1,5 @@
 .faq {
-  padding: 3rem 0 1rem;
+  padding: 3rem 1rem 1rem;
   margin: 0 auto;
   max-width: 40rem;
   font-family: $font-lucida;
@@ -13,5 +13,6 @@
   dd {
     margin: 0;
     padding-bottom: 3rem;
+    line-height: 1.5;
   }
 }

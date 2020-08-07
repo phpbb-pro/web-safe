@@ -1,9 +1,16 @@
+$menu-breakpoint: 53rem;
+
 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: flex-end;
+  white-space: nowrap;
+  overflow-x: auto;
+
+  @media (min-width: $menu-breakpoint) {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   a {
     display: inline-block;
@@ -27,7 +34,14 @@
   }
 }
 .menu__item--logo {
-  margin-right: auto;
+  display: block;
+  position: sticky;
+  left: 1rem;
+
+  @media (min-width: $menu-breakpoint) {
+    display: list-item;
+    margin-right: auto;
+  }
 }
 
 .menu__submenu-wrapper {
