@@ -16,7 +16,7 @@ const glob = require('glob');
 mix.js('resources/js/silverlike/app.js', 'public/js/silverlike')
     .sass('resources/sass/silverlike/silverlike.scss', 'public/css')
 
-httpproxy
+// httpproxy
 mix.js('resources/js/seo/autotrack.js', 'public/js/seo')
     .sass('resources/sass/seo/seo.scss', 'public/css')
 
