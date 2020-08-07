@@ -64,7 +64,7 @@ class PaymentProcessController extends Controller
 
             $packer = '\\App\\Packers\\' . ucfirst($client->ext) . 'Packer';
             $packer = new $packer;
-            $zip_name = $packer->pack('basic', $client->name . ' ' . $client->surname, $client->uuid);
+            $zip_name = $packer->pack($client->license, $client->name . ' ' . $client->surname, $client->uuid);
 
             $mailer = '\\App\\Mail\\' . ucfirst($client->ext) . 'Purchase';
             Mail::to($client->contact_email)
