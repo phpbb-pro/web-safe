@@ -9,8 +9,8 @@ class FormsBuilderController extends Controller
     public function render(Request $request)
     {
         $client = \App\Client::where('uuid', $request->input('key'))->first();
-        if (!$client->exists()) {
-            $client = new stdClass;
+        if ($client === null) {
+            $client = new \stdClass;
             $client->id = 1;
             // abort(401);
         }
