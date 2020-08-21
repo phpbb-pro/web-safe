@@ -12,19 +12,19 @@
       <article class="pricing__item">
         <h2 class="pricing__name">Basic</h2>
         <data class="pricing__price">{{ price('forms', 'basic') }}</data>
-        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></div>
+        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a><div class="pricing__button-explanation">via PayPal</div></div>
         <p class="pricing__desc">Unlimited number of forms, visual editor and edit capability.</p>
       </article>
       <article class="pricing__item pricing__item--popular">
         <h2 class="pricing__name">Extended</h2>
         <data class="pricing__price">{{ price('forms', 'extended') }}</data>
-        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></div>
+        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a><div class="pricing__button-explanation">via PayPal</div></div>
         <p class="pricing__desc">All Basic plus more input types, custom links and permissions.</p>
       </article>
       <article class="pricing__item">
         <h2 class="pricing__name">Reseller</h2>
         <data class="pricing__price">{{ price('forms', 'reseller') }}</data>
-        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></div>
+        <div class="pricing__button"><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a><div class="pricing__button-explanation">via PayPal</div></div>
         <p class="pricing__desc">Charge your clients for installation and/or using of this extension.</p>
       </article>
     </section>
@@ -115,9 +115,9 @@
           </tr>
           <tr>
             <td></td>
-            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a></td>
-            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a></td>
-            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a></td>
+            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'basic']) }}">Buy now</a><div class="pricing__button-explanation">via PayPal</div></td>
+            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'extended']) }}">Buy now</a><div class="pricing__button-explanation">via PayPal</div></td>
+            <td><a class="js-button-loading button" href="{{ route('pay', ['ext' => 'forms', 'package' => 'reseller']) }}">Buy now</a><div class="pricing__button-explanation">via PayPal</div></td>
           </tr>
         </tbody>
       </table>

@@ -43,6 +43,11 @@ $pricing-breakpoint: 45rem;
 .pricing__button {
   padding: 1rem 0;
 }
+.pricing__button-explanation {
+  padding-top: 0.4rem;
+  font-size: 0.6875rem;
+  color: rgba(0, 0, 0, 0.5)
+}
 
 .pricing__desc {
   line-height: 1.4rem;
