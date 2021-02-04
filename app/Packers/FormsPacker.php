@@ -9,6 +9,8 @@ class FormsPacker extends Packer {
 
     public function additional_tasks($license, $name, $timestamp)
     {
+        Storage::delete("tmp/$timestamp/senky/forms/README");
+
         if ($license == 'basic') {
             Storage::delete([
                 "tmp/$timestamp/senky/forms/config/controls_extended.yml",

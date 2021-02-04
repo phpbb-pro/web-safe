@@ -14,11 +14,14 @@ const glob = require('glob');
 
 // forms
 mix.js('resources/js/silverlike/app.js', 'public/js/silverlike')
-    .sass('resources/sass/silverlike/silverlike.scss', 'public/css')
+    .sass('resources/sass/silverlike/silverlike.scss', 'public/css');
 
 // httpproxy
 mix.js('resources/js/seo/autotrack.js', 'public/js/seo')
-    .sass('resources/sass/seo/seo.scss', 'public/css')
+    .sass('resources/sass/seo/seo.scss', 'public/css');
+
+// blog
+mix.sass('resources/sass/blog/blog.scss', 'public/css');
 
 // general
 mix.copyDirectory('resources/images', 'public/images')

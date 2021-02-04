@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function() {
     return view('index');
-});
+})->name('index');
 
 foreach (glob('../resources/views/*/pages/*.blade.php') as $file) {
     $pathinfo = pathinfo($file);
