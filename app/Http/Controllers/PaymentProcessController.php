@@ -67,9 +67,11 @@ class PaymentProcessController extends Controller
             $zip_name = $packer->pack($client->license, $client->name . ' ' . $client->surname, $client->uuid);
 
             $mailer = '\\App\\Mail\\' . ucfirst($client->ext) . 'Purchase';
-            Mail::to($client->contact_email)
-                ->bcc('private-013@example.invalid')
-                ->send(new $mailer($client->license, $client->name, $zip_name));
+            $message = Mail::to($client->contact_email);
+            if ($bcc = config('mail.purchase_bcc')) {
+                $message->bcc($bcc);
+            }
+            $message->send(new $mailer($client->license, $client->name, $zip_name));
         }
 
         return response('', 200);

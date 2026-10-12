@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-00000000-0');
-    </script>
+    <!-- This document is also distributed as static HTML, without analytics. -->
 
     <title>phpBB | Forms Extension</title>
     <meta name="description" content="Learn how to install and use phpBB Forms extension.">

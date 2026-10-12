@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    @if (config('services.analytics.proxy_id'))
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-00000000-0', 'auto');
+      ga('create', @json(config('services.analytics.proxy_id')), 'auto');
       ga('set', 'anonymizeIp', true);
 
       ga('require', 'cleanUrlTracker');
@@ -17,6 +18,7 @@
     </script>
     <script async src="https://www.google-analytics.com/analytics.js"></script>
     <script async src="{{ mix('js/seo/autotrack.js') }}"></script>
+    @endif
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

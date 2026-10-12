@@ -8,11 +8,13 @@
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
     <link href="{{ mix('css/silverlike.css') }}" rel="stylesheet">
+    @if (config('services.analytics.site_id'))
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ urlencode(config('services.analytics.site_id')) }}"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-00000000-0');
+      window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', @json(config('services.analytics.site_id')));
     </script>
+    @endif
   </head>
   <body>
     <div class="wrap">

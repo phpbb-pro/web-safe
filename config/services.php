@@ -2,6 +2,11 @@
 
 return [
 
+    'analytics' => [
+        'site_id' => env('ANALYTICS_SITE_ID'),
+        'proxy_id' => env('ANALYTICS_PROXY_ID'),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Third Party Services

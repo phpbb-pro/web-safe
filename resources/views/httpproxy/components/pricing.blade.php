@@ -16,7 +16,7 @@
             <li><i class="far fa-check-circle demo"></i>Installation support</li>
           </ul>
           <div class="text-center">
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=REDACTED" title="Buy a license now"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Buy a license"></a>
+            <span aria-disabled="true" title="Purchasing is disabled in this portfolio archive"><img style="width: 100%; margin-top: 20px;" src="https://www.paypalobjects.com/webstatic/mktg/merchant_portal/button/buynow.en.png" alt="Purchasing disabled in portfolio archive"></span>
           </div>
         </div>
       </div>
